@@ -23,6 +23,6 @@ li {
     color: green;
   }
   
-  [title*="popular"] {
+  a[title*="popular"] {
     font-size: 24px;
   }
