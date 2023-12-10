@@ -2,7 +2,7 @@ img[alt="Pollution"] {
     border: 5px dashed red;
 }
 
-img[href$=".jpg"] {
+img[src$=".jpg"] {
     margin-left: 50px;
 }
 
@@ -14,7 +14,7 @@ li[data-description*="even"] {
     font-size: 24px;
 }
 
-a[href^="https//"] {
+a[src^="https//"] {
     color: green;
 }
 
