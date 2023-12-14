@@ -1,0 +1,20 @@
+div {
+    width: 420px;
+    height: 140px;
+    background-color: bisque;
+    margin: 50px 100px;
+    padding: 20px;
+    border-top: 10px;
+    border-bottom: 10px;
+    border-left: 20px;
+    border-right: 20px;
+    border-bottom-style: dashed;
+    border-left-style: dashed;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-top-color: firebrick;
+    border-right-color: chartreuse;
+    border-bottom-color: burlywood;
+    border-left-color: aqua;
+    box-sizing: border-box;
+}
