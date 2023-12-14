@@ -1,4 +1,5 @@
 div {
+    font-size: 24px;
     width: 420px;
     height: 140px;
     background-color: bisque;
@@ -16,5 +17,5 @@ div {
     border-right-color: chartreuse;
     border-bottom-color: burlywood;
     border-left-color: aqua;
-    box-sizing: border-box;
+    
 }
