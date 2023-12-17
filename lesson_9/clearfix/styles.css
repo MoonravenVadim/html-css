@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-.square {
-    width: 100px;
-    height: 100px;
-}
-
 .red {
     background-color: red;
     float: right;
@@ -21,4 +16,5 @@
 
 .footer {
     clear: both;
+    box-sizing: border-box;
 }
