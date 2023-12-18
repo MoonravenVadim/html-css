@@ -7,7 +7,7 @@
 
 nav {
     height: 40px;
-    position: static;
+    position: absolute;
 }
 
 li {
