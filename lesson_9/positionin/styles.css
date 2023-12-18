@@ -5,11 +5,8 @@
     position: fixed;
 }
 
-nav {
-    position: static;
-}
-
 li {
+    position: relative;
     height: 40px;
     float: left;
     color: white;
