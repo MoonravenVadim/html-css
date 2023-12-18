@@ -6,11 +6,11 @@
 }
 
 nav {
-    height: 40px;
     position: absolute;
 }
 
 li {
+    height: 40px;
     float: left;
     color: white;
     margin-left: 16px;
