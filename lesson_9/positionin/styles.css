@@ -10,12 +10,15 @@ nav {
 }
 
 li {
-    height: 40px;
     float: left;
     color: white;
     margin-left: 16px;
     line-height: 0.5;
     list-style-type: none;
+}
+
+ul {
+    height: 40px;
 }
 
 .content {
