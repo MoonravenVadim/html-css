@@ -5,11 +5,8 @@
     position: fixed;
 }
 
-ul {
-    position: static;
-}
-
 li {
+    position: fixed;
     height: 40px;
     float: left;
     color: white;
