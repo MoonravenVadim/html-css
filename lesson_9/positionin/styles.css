@@ -6,7 +6,7 @@
 }
 
 li {
-    position: fixed;
+    position: absolute;
     height: 40px;
     float: left;
     color: white;
