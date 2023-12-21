@@ -8,6 +8,12 @@ nav {
     height: 40px;
     width: 100%;
     position: fixed;
+    z-index: 1;
+}
+
+ul {
+    height: 40px;
+    margin: 0;
 }
 
 li {
@@ -15,7 +21,7 @@ li {
     float: left;
     color: white;
     margin-left: 16px;
-    line-height: 0.5;
+    line-height: 2;
     list-style-type: none;
 }
 
