@@ -4,10 +4,7 @@ body {
 
 header {
     display: flex;
-}
-
-h1 {
-    margin: auto;
+    justify-content: center;
 }
 
 .article {
@@ -16,4 +13,10 @@ h1 {
     background-color: bisque;
     flex-grow: 1;
     min-width: 300px;
+    flex-basis: 300px;
+}
+
+.articles-list {
+    display: flex;
+    flex-wrap: wrap;
 }
