@@ -2,6 +2,7 @@ html {
     margin: 32px;
     font-family: Roboto, sans-serif;
     font-size: 18px;
+    box-sizing: border-box;
 }
 
 h1 {
