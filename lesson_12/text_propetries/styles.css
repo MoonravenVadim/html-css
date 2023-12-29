@@ -1,12 +1,13 @@
-* {
+html {
     margin: 32px;
     font-family: Roboto, sans-serif;
     font-size: 18px;
 }
 
 h1 {
+    display: flex;
+    justify-content: center;
     word-spacing: 20px;
-    text-align: center;
     text-transform: uppercase;
 }
 
