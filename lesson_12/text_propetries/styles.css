@@ -1,5 +1,12 @@
-html {
+* {
+    box-sizing: border-box;
+}
+
+section {
     margin: 32px;
+}
+
+body {
     font-family: Roboto, sans-serif;
     font-size: 18px;
 }
