@@ -9,3 +9,11 @@ form {
 input {
     margin: 8px;
 }
+
+select {
+    margin: 8px;
+}
+
+textarea {
+    margin: 8px;
+}
