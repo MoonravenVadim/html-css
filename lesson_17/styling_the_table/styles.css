@@ -15,7 +15,6 @@ table, td, th {
 td, th {
     padding: 4px;
     text-align: right;
-    line-height: 40px;
 }
 
 div {
@@ -41,4 +40,8 @@ tfoot {
 
 caption {
     margin: 8px;
+}
+
+tr {
+    height: 40px;
 }
