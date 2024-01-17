@@ -2,3 +2,15 @@ div {
     display: flex;
     justify-content: space-around;
 }
+
+.fa-battery-half {
+    font-size: 64px;
+}
+
+.fa-battery-quarter {
+    font-size: 128px;
+}
+
+.fa-battery-empty {
+    font-size: 256px;
+}
