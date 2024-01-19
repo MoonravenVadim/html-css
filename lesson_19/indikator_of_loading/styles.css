@@ -1,0 +1,29 @@
+.spinner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.spinner-text {
+    font-size: 16px;
+    font-family: monospace;
+    text-transform: uppercase;
+    animation: blinking 2s linear infinite;
+}
+
+.rect {
+    position: relative;
+    background-color: black;
+    width: 10px;
+    height: 4px;
+    border-radius: 2px;
+    animation: blinking 2s linear infinite, moving 2s alternate infinite;
+}
