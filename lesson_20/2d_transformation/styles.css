@@ -4,3 +4,7 @@
     background-color: tomato;
     transform: translate(200px, 100px) rotate(45deg) scale(1.5);
 }
+
+* {
+    box-sizing: border-box;
+}
