@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+.fancy-button {
+    width: 150px;
+    height: 50px;
+    border-radius: 4px;
+    background: linear-gradient(45deg, yellow, red);
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: absolute;
+    top: calc(50vh - 25px);
+    left: calc(50vw - 125px);
+    animation: jump 0.5s 0.4s ease-in-out, rotate 0.5s ease-in-out, go-out 1s 2s ease forwards;
+}
+
+@keyframes jump {
+    0% {
+        top: calc(50vh - 25px);
+    }
+    50% {
+        top: calc(50vh - 25px - 40px);
+    }
+    100% {
+        top: calc(50vh - 25px);
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes go-out {
+    from {
+        left: calc(50vw - 125px);
+    }
+    to {
+        left: calc(50vw - 125px + 2000px);
+    }
+}
