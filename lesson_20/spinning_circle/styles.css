@@ -3,15 +3,15 @@
 }
 
 .container{
-    width: 100vw;
+    display: flex;
     height: 100vh;
 }
 
 .spinner {
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     flex-direction: column;
 }
 
