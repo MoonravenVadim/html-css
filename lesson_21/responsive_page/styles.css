@@ -25,16 +25,16 @@ body {
 }
 
 .navigation {
-    display: flex;
+   
     width: 20%;
     float: left;
-    flex-direction: column;
+
     padding: 0.5em;
 }
 
 .section {
     width: 60%;
-    display: flex;
+
     float: left;
     flex-direction: column;
     padding: 0.5em;
@@ -44,7 +44,7 @@ body {
 .news {
     width: 20%;
     margin-right: auto;
-    display: flex;
+
     float: left;
     flex-direction: column;
     padding: 0.5em;
