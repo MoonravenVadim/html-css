@@ -21,15 +21,13 @@ body {
 }
 
 .navigation {
-   
     width: 20vw;
     float: left;
-
     padding: 0.5em;
 }
 
 .section {
- 
+    width: 60vw;
     float: left;
     flex-direction: column;
     padding: 0.5em;
