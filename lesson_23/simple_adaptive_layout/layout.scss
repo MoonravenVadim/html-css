@@ -1,0 +1,41 @@
+$sm: 600px;
+$bg: 900px;
+
+.nav {
+    background-color: #ff7f50;
+}
+
+.prod-list {
+    background-color: #006400;
+}
+
+.news {
+    background-color: #0ff;
+}
+
+span {
+    text-transform: lowercase;
+    border-radius: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 8px;
+    background-color: #faebd7;
+    margin: auto;
+}
+
+div {
+    height: 200px;
+    display: flex;
+    flex: 1 1;
+}
+
+@mixin small {
+    @media screen and (min-width: $sm) {
+        @content;
+    }
+}
+
+@mixin big {
+    @media screen and (min-width: $bg) {
+        @content;
+    }
+}
