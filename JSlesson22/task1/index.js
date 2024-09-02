@@ -4,13 +4,12 @@ function logTarget(text, color) {
     list.innerHTML += `<span style="color: ${color}; margin-left: 8px;">${text}</span>`;
 }
 
-const logGreenDiv = logTarget.bind(null, 'DIV', 'green');
-const logGreenP = logTarget.bind(null, 'P', 'green');
-const logGreenSpan = logTarget.bind(null, 'SPAN', 'green');
-
 const logGrayDiv = logTarget.bind(null, 'DIV', 'grey');
+const logGreenDiv = logTarget.bind(null, 'DIV', 'green');
 const logGrayP = logTarget.bind(null, 'P', 'gray');
+const logGreenP = logTarget.bind(null, 'P', 'green');
 const logGraySpan = logTarget.bind(null, 'SPAN', 'gray');
+const logGreenSpan = logTarget.bind(null, 'SPAN', 'green');
 
 const clearBtn = document.querySelector('.clear-btn');
 function clearList() {
