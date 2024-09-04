@@ -1,54 +1,58 @@
-function logTarget(text, color) {
-    const list = document.querySelector('.events-list');
+const divElem = document.querySelector('div');
+const pElem = document.querySelector('p');
+const spanElem = document.querySelector('span');
+const eventsListElem = document.querySelector('.events-list');
 
-    list.innerHTML += `<span style="color: ${color}; margin-left: 8px;">${text}</span>`;
-}
+const logEvent = (text, color) => {
+  const spanElem = document.createElement('span');
+  spanElem.style = `color: ${color}; margin-left: 8px;`;
+  spanElem.textContent = text;
+  eventsListElem.appendChild(spanElem);
+};
 
-const logGrayDiv = logTarget.bind(null, 'DIV', 'grey');
-const logGreenDiv = logTarget.bind(null, 'DIV', 'green');
-const logGrayP = logTarget.bind(null, 'P', 'gray');
-const logGreenP = logTarget.bind(null, 'P', 'green');
-const logGraySpan = logTarget.bind(null, 'SPAN', 'gray');
-const logGreenSpan = logTarget.bind(null, 'SPAN', 'green');
+const logGreenDiv = logEvent.bind(null, 'div', 'green');
+const logGreyDiv = logEvent.bind(null, 'div', 'grey');
 
-const clearBtn = document.querySelector('.clear-btn');
-function clearList() {
-    const list = document.querySelector('.events-list');
-    list.innerHTML = '';
-}
-clearBtn.addEventListener('click', clearList, true);
+const logGreenP = logEvent.bind(null, 'p', 'green');
+const logGreyP = logEvent.bind(null, 'p', 'grey');
 
-const RectDiv = document.querySelector('.rect_div');
-const RectP = document.querySelector('.rect_p');
-const RectSpan = document.querySelector('.rect_span');
+const logGreenSpan = logEvent.bind(null, 'span', 'green');
+const logGreySpan = logEvent.bind(null, 'span', 'grey');
 
-const AttachHandlersBtn = document.querySelector('.attach-handlers-btn');
-function AttachHandlers() {
-    RectDiv.addEventListener('click', logGrayDiv, true);
-    RectP.addEventListener('click', logGrayP, true);
-    RectSpan.addEventListener('click', logGraySpan, true);
+const attachHandlers = () => {
+  divElem.addEventListener('click', logGreyDiv, true);
+  divElem.addEventListener('click', logGreenDiv);
+  pElem.addEventListener('click', logGreyP, true);
+  pElem.addEventListener('click', logGreenP);
+  spanElem.addEventListener('click', logGreySpan, true);
+  spanElem.addEventListener('click', logGreenSpan);
+};
 
-    RectDiv.addEventListener('click', logGreenDiv);
-    RectP.addEventListener('click', logGreenP);
-    RectSpan.addEventListener('click', logGreenSpan);
-}
+const attachHandlersBtnElem = document.querySelector('.attach-handlers-btn');
+attachHandlersBtnElem.addEventListener('click', attachHandlers);
 
+const removeHandlers = () => {
+  divElem.removeEventListener('click', logGreenDiv);
+  divElem.removeEventListener('click', logGreyDiv, true);
+  pElem.removeEventListener('click', logGreenP);
+  pElem.removeEventListener('click', logGreyP, true);
+  spanElem.removeEventListener('click', logGreenSpan);
+  spanElem.removeEventListener('click', logGreySpan, true);
+};
 
-AttachHandlersBtn.addEventListener('click', AttachHandlers, true);
+const removeHandlersBtnElem = document.querySelector('.remove-handlers-btn');
+removeHandlersBtnElem.addEventListener('click', removeHandlers);
 
-const removeEventsHandlerBtn = document.querySelector('.remove-handlers-btn');
+const clearBoard = () => {
+  eventsListElem.innerHTML = '';
+};
 
-function removeEventsHandler() {
-    RectDiv.removeEventListener('click', logGrayDiv, true);
-    RectP.removeEventListener('click', logGrayP, true);
-    RectSpan.removeEventListener('click', logGraySpan, true);
+const clearBtnElem = document.querySelector('.clear-btn');
+clearBtnElem.addEventListener('click', clearBoard);
 
-    RectDiv.removeEventListener('click', logGreenDiv);
-    RectP.removeEventListener('click', logGreenP);
-    RectSpan.removeEventListener('click', logGreenSpan);
-}
-
-removeEventsHandlerBtn.addEventListener('click', removeEventsHandler);
+document.addEventListener('DOMContentLoaded', () => {
+  attachHandlers();
+});
 
 
-document.addEventListener('DOMContentLoaded', () => { AttachHandlers(); })
+
