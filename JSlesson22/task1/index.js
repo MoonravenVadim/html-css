@@ -51,4 +51,4 @@ function removeEventsHandler() {
 removeEventsHandlerBtn.addEventListener('click', removeEventsHandler);
 
 
-AttachHandlers()
+document.addEventListener('DOMContentLoaded', () => { AttachHandlers(); })
