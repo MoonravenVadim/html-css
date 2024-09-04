@@ -50,5 +50,5 @@ function removeEventsHandler() {
 
 removeEventsHandlerBtn.addEventListener('click', removeEventsHandler);
 
-clearList()
+
 AttachHandlers()
